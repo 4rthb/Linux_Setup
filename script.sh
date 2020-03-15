@@ -39,10 +39,36 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 
-#instalacao do Laravel e Yii2
+##instalacao do Laravel e Yii2
 composer global require laravel/installer
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 
+##instalacao/update Python 3 e pipenv
+sudo apt-get install python3
+sudo apt-get install python3-pip
+pip3 install --user pipenv
+
+##instalacao do Openjdk
+sudo apt install openjdk-8-jdk
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export PATH=$PATH:$JAVA_HOME/bin
+
+##instalacao do RVM 
+sudo apt-get install software-properties-common
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get install rvm
+echo 'source "/etc/profile.d/rvm.sh"'>> ~/.bashrc
+
+##instalacao do VScode
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+
+##para instalar Ruby eh preciso primeiro rebootar o sistema, depois abrir o terminal e digitar:
+##rvm install ruby
+sudo reboot
 
 
 
