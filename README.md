@@ -1,6 +1,6 @@
-# Descrição:
- Bash script para instalar ferramentas importantes em um computador limpo com Ubuntu/_Debian-based_ Linux
-## Ferramentas:
+# Description:
+ Bash script that installs useful tools for programming in a fresh instalation of Ubuntu/Debian
+## Tools:
  - NVM
  - NPM/Node
  - git
@@ -14,9 +14,8 @@
  - RVM
  - VSCode
  - Ruby
-## Modo de usar:
- 1. Abrir o script usando o terminal
- 2. Esperar a instalação e o reboot
- 3. Abrir o terminal e executar o comando: `rvm install ruby` 
- 4. ????
- 5. Profit
+## Steps:
+ 1. Run the script on the terminal: `./script.sh`
+ 2. Wait until the instalation is completed, the computer will reboot 
+ 3. Open the terminal and run this line of code: `rvm install ruby` 
+ 4. After the last component is installed, it's over
